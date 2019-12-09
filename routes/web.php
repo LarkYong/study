@@ -34,3 +34,7 @@ Route::any('captcha-test', function() {
     $form .= '</form>';
     return $form;
 });
+
+Route::any('redis', 'RedisController@setRedis')->name('setRedis');
+Route::any('getRedis', 'RedisController@getRedis')->name('getRedis');
+
