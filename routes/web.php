@@ -37,4 +37,5 @@ Route::any('captcha-test', function() {
 
 Route::any('redis', 'RedisController@setRedis')->name('setRedis');
 Route::any('getRedis', 'RedisController@getRedis')->name('getRedis');
+Route::get('/test','QueuedController@test');
 
